@@ -24,7 +24,8 @@
 
 .quantity_count {
     @include dimension(3.75rem, 2.25rem);
-    color: red;
+    // color: red;
+    color: #eeb93ae0;
     font-size: 1.4rem;
     line-height: 2.25rem;
     font-weight: bold;

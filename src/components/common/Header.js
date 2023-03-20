@@ -1,3 +1,5 @@
+
+
 import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineSearch, AiOutlineShoppingCart, AiOutlineUser } from 'react-icons/ai';
@@ -33,10 +35,18 @@ const Header = () => {
             <header id="header" className={isSticky ? 'sticky' : ''}>
                 <div className="container">
                     <div className="navbar">
-                        <h2 className="nav_logo">
-                            <Link to="/">X-Beat</Link>
-                        </h2>
+                    <h2 className="nav_logo">
+{/* <img src='public/images/logo/logo11.png'> */}
+<img src={require("../../images/logo11.png" )} id='Logo' width="10" alt={require("../../images/logo11.png" )}></img>
+{/* <img style={{ width: 50, height: 50 }} source={require("../../../public/images/logo/logo11.png" )} /> */}
+</h2> 
                         <nav className="nav_actions">
+                            <div className="search_action">
+                                <Link to="/shiptracking">
+                                    <AiOutlineUser />
+                                </Link>
+                                <div className="tooltip">Shiptracking</div>
+                            </div>
                             <div className="search_action">
                                 <span onClick={() => toggleSearch(true)}>
                                     <AiOutlineSearch />

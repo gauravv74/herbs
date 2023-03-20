@@ -88,8 +88,10 @@ const Cart = () => {
                                                 <b>{displayTotalAmount}</b>
                                             </div>
                                         </div>
-                                        <button type="button" className="btn checkout_btn">Checkout</button>
-                                    </div>
+                                        
+                                        <a href='https://pmny.in/crZQdIGz23A1' className="btn checkout_btn">
+                                            Checkout
+                                        </a>                                    </div>
                                 </div>
                             </div>
                         )

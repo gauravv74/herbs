@@ -1,5 +1,7 @@
 #featured {
-    margin-top: 3rem;
+    // margin-top: 3rem;
+    padding: 0%;
+    background-color: #fae6c2;
 }
 
 .featured_slides {
@@ -12,7 +14,7 @@
 }
 
 .featured_swiper {
-    @include padding-y(3rem !important, 5rem !important);
+    @include padding-y(1rem !important, 5rem !important);
 }
 
 .featured_img {
@@ -22,4 +24,9 @@
     img {
         @include img-fit;
     }
+}
+.featured_title
+{
+    font-weight: 700;
+    font-size: 20px;
 }

@@ -6,6 +6,7 @@ import Cart from '../pages/Cart';
 import Home from '../pages/Home';
 import ProductDetails from '../pages/ProductDetails';
 import ErrorPage from '../pages/ErrorPage';
+import Shiptracking from '../pages/shiptracking';
 
 const RouterRoutes = () => {
 
@@ -14,6 +15,7 @@ const RouterRoutes = () => {
     return (
         <>
             <Routes>
+                <Route path= '/shiptracking' element={<Shiptracking/>} />
                 <Route path="/" element={<Home />} />
                 <Route path="/cart" element={<Cart />} />
                 <Route path="/all-products" element={<AllProducts />} />
